@@ -2,32 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  @apply font-sans
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+h1 {
+  @apply text-4xl font-black text-center
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+h2 {
+  @apply text-2xl text-center
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+
+p {
+  @apply text-xl text-white
+}
+
+a {
+  @apply text-primary focus:decoration-wavy hover:decoration-wavy decoration-solid underline-offset-auto decoration-1 underline
+}
+
+.buttonLike {
+ @apply cursor-pointer font-bold rounded-xl bg-primary text-white p-2   inline-flex no-underline items-center justify-center shadow-lg tracking-wide transition hover:scale-105 hover:shadow-xl focus:scale-105 focus:shadow-xl
+}
+
+
+     /*For Phantom Sans font*/
+@font-face {
+  font-family: 'Phantom Sans';
+  src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff')
+  format('woff'),
+  url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2')
+  format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Phantom Sans';
+  src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff')
+  format('woff'),
+  url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff2')
+  format('woff2');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Phantom Sans';
+  src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff')
+  format('woff'),
+  url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2')
+  format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
