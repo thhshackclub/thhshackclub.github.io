@@ -1,4 +1,4 @@
-import { BookOpen, HelpCircle } from "react-feather";
+import { BookOpen, Globe, HelpCircle } from "react-feather";
 export default function Home() {
   return (
     <main>
@@ -18,20 +18,28 @@ export default function Home() {
         </a>
       </div>
       <section className={"px-10 mt-20"}>
-        <div className={"bg-primary border-muted border-2 rounded-xl p-2 flex"}>
-          <HelpCircle className={"w-20 my-auto"} width={20} color={"white"} />
-          <p>
+          <p className='text-center text-black'>
             Hack Club is a 501(c)(3) non-profit organization aimed at making
-            programming more accessible to high schoolers across the globe. So
-            what?
+            programming more accessible to high schoolers across the globe. <span className="">So
+            what? This means that...</span>
           </p>
-        </div>
-        <section className={"grid grid-cols-2"}>
-          <div>
-            <BookOpen />
-            <p>Learn to </p>
+        <section className={"grid grid-cols-2 mt-2 gap-2"}>
+          <div className="infoBox">
+            <Globe className={"infoBoxIcon"} color={"white"}/>
+            <p>Be part of a globally inclusive, comfortable, and convenient environment where high schoolers are enabled to produce projects that they never thought were possible..</p>
+          </div>
+          <div className="infoBox">
+            <BookOpen className={"infoBoxIcon"} width={20} color={"white"}/>
+            <p>Learn to code by creating real, impactful projects and contributing to open-source programs, even if you have zero prior experience!</p>
           </div>
         </section>
+        <section className="mt-20">
+          <h1>
+          Hack Club is not about "hacking"!
+          </h1>
+          <p className="text-center text-black">Hacking refers to overcoming challenges through creative solutions. This is what we do at Hack Club, not hacking into banks.</p>
+        </section>
+        <h2 className="mt-20">Join us every XXXday at XX:XX in room XXX after school!</h2>
       </section>
     </main>
   );

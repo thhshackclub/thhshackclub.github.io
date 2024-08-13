@@ -24,7 +24,7 @@ a {
 }
 
 .buttonLike {
- @apply cursor-pointer font-bold rounded-xl bg-primary text-white p-2   inline-flex no-underline items-center justify-center shadow-lg tracking-wide transition hover:scale-105 hover:shadow-xl focus:scale-105 focus:shadow-xl
+ @apply cursor-pointer font-bold rounded-xl bg-primary text-white p-2 inline-flex no-underline items-center justify-center shadow-lg tracking-wide transition hover:scale-105 hover:shadow-xl focus:scale-105 focus:shadow-xl
 }
 
 
@@ -58,4 +58,12 @@ a {
   font-weight: bold;
   font-style: normal;
   font-display: swap;
+}
+
+.infoBox {
+  @apply bg-primary border-muted border-2 rounded-xl p-2 px-4 flex flex-col
+}
+
+.infoBoxIcon {
+  @apply w-12 h-12 rounded-lg border-2 p-2 aspect-square
 }
