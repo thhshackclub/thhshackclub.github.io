@@ -45,7 +45,7 @@ export default function Home() {
           </div>
         </section>
         <section className="mt-20">
-          <h1>Hack Club is not about "hacking"!</h1>
+          <h1>Hack Club is not about {`"hacking"`}!</h1>
           <p className="text-center text-black">
             Hacking refers to overcoming challenges through creative solutions.
             This is what we do at Hack Club, not hacking into banks.
